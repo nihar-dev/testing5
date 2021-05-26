@@ -38,8 +38,7 @@
 
 
     <!-- pyplot css -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  </head>
+    <script src="plotly-latest.min.js"></script> 
   <body>
     
 <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow">
@@ -77,31 +76,31 @@
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              <span data-feather="home"></span>
+              <span data-feather="trello"></span>
               KPI Performance
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="file"></span>
+              <span data-feather="activity"></span>
               Marketing Contribution
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
+              <span data-feather="aperture"></span>
               CPA
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">
-              <span data-feather="users"></span>
+              <span data-feather="codesandbox"></span>
               Optimization
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
+              <span data-feather="codepen"></span>
               Simulation
             </a>
           </li>
@@ -167,13 +166,13 @@
 
       <!-- Cards -->
       <div id="cards_landscape_wrap-2">
-        <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-toolbar mb-2 mb-md-0" style="justify-content: center; display: flex;" >
 
           <form >
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
                 <div class="input-daterange input-group" id="datepicker">
                   <div class="input-group-prepend m-1">
-                    <span class=" btn  btn-outline-secondary disable" id="basic-addon3">Optimization</span>
+                    <span class=" btn basic-addon btn-outline-secondary disabled" id="basic-addon3">Optimization</span>
                   </div>
                   <!-- <input type="text"  aria-label="Small" aria-describedby="inputGroup-sizing-sm" class="input-sm form-control" name="start" />
                   <span class="input-group-addon">to</span>
@@ -200,105 +199,125 @@
               </div>  
               <div class="input-daterange input-group" id="parent_control">
                   <div class="input-group-prepend">
-                    <span class=" btn  btn-outline-secondary m-1 disable" id="basic-addon3">Parent Scenario  </span>
+                    <span class=" btn basic-addon btn-outline-secondary m-1 disabled" id="basic-addon3">Parent Scenario  </span>
                   </div>
                   <div class="input-group input-group-sm m-1">
                           <input type="text" aria-label="Small" aria-describedby="inputGroup-sizing-sm" class="form-control" placeholder="Start Month" >
                   </div>
               </div>
-
+              <div class="input-daterange input-group" id="parent_control">
+                <div class="input-group-prepend">
+                  <span class=" btn basic-addon btn-outline-secondary m-1 disabled" aria-disabled="true"  id="basic-addon35" > View  </span>
+                </div>
+                <div class="dropdown m-1">
+                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Overall
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Overall</a></li>
+                    <li><a class="dropdown-item" href="#">Jan</a></li>
+                    <li><a class="dropdown-item" href="#">Feb</a></li>
+                    <li><a class="dropdown-item" href="#">Mar</a></li>
+                  </ul>
+                </div>
+            </div>
             </div>
           </form>
             
           
         </div>
-        <div class="container">
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="">
-                        <div class="card-flyer">
-                            <div class="text-box">
+    </div>
 
-                                <div class="text-container">
-                                    <h6>Applications</h6>
-                                    <p>2984</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                  <a href="">
-                      <div class="card-flyer">
-                          <div class="text-box">
+    <div id="cards_landscape_wrap-2" class="container-fluid ">
 
-                              <div class="text-container">
-                                  <h6>Optimized Application</h6>
-                                  <p>2984</p>
-                                </div>
-                          </div>
-                      </div>
-                  </a>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="">
-                    <div class="card-flyer">
-                        <div class="text-box">
-
-                            <div class="text-container">
-                                <h6>Spends(in $)</h6>
-                                <p>2984</p>
-                              </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-              <a href="">
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+              
                   <div class="card-flyer">
                       <div class="text-box">
-
                           <div class="text-container">
-                              <h6>Optimized Spends(in $)</h6>
-                              <p>2984</p>
-                            </div>
+                            <span data-feather="codesandbox"></span>
+                            <h6> 
+                               Applications
+                            </h6>
+                            <p class="text-secondary">2984</p>
+                          </div>
                       </div>
                   </div>
-              </a>
+           
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <a href="">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+        
                 <div class="card-flyer">
                     <div class="text-box">
 
                         <div class="text-container">
-                            <h6>CPA (In $)</h6>
-                            <p>2984</p>
+                          <span data-feather="codesandbox"></span>
+                            <h6>   Optimized Application</h6>
+                            <p >2984</p>
                           </div>
                     </div>
                 </div>
-            </a>
+         
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <a href="">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+     
               <div class="card-flyer">
                   <div class="text-box">
-
+                    
                       <div class="text-container">
-                          <h6>Optimized CPA(In $)</h6>
-                          <p>2984</p>
+                        <span data-feather="dollar-sign"></span>
+                          <h6> </span> Spends </h6>
+                          <p class="text-secondary">2984</p>
                         </div>
                   </div>
               </div>
-          </a>
+
       </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+
+            <div class="card-flyer">
+                <div class="text-box">
+
+                    <div class="text-container">
+                      <span data-feather="dollar-sign"></span>
+                        <h6>  Optimized Spends </h6>
+                        <p >2984</p>
+                      </div>
+                </div>
             </div>
     </div>
-    </div>
-<!-- Cards End-->
-        <div class="d-flex flex-row-reverse justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-top m-6">
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+          <div class="card-flyer">
+              <div class="text-box">
+                
+                  <div class="text-container">
+                    <span data-feather="aperture"></span> 
+                      <h6>  CPA (In $)</h6>
+                      <p class="text-secondary">2984</p>
+                    </div>
+              </div>
+          </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 col-lg">
+        <div class="card-flyer">
+            <div class="text-box">
 
+                <div class="text-container">
+                  <span data-feather="aperture"></span>
+                    <h6 >  Optimized CPA(In $)</h6>
+                    <p >2984</p>
+                  </div>
+            </div>
+        </div>
+</div>
+      </div>
+</div>
+<!-- Cards End-->
+        <h5 class='border-bottom mt-3'>Constraints</h5>
+        <div class="d-flex flex-row-reverse justify-content-between flex-wrap flex-md-nowrap align-items-center  pb-2 mb-3   m-6">
+          
           <!-- <div class="btn-toolbar mb-2 mb-md-0 selectortop">
             <h6 >View:  </h6>
 
@@ -310,159 +329,166 @@
             </div>
 
           </div> -->
+          <div class="col " >
+            <div class="card constraint"  width="900" height="380">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item active">
+                  <div class="row">
+                    <div class="col">
+                      Channels
+                    </div>
+                    <div class="col">
+                      Change( % )
+                    </div>
+                    <div class="col">
+                      New Spend Value($)
+                    </div>
+                    <div class="col">
+                      Current Spend Value($)
+                    </div>
+
+                    </div>
+                </li>
+                </ul>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item ">
+                  <div class="row">
+                    <div class="col">
+                      Overall
+                    </div>
+                    <div class="col">
+                      0
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                  <div class="row">
+                    <div class="col">
+                      Google Adwords
+                    </div>
+                    <div class="col">
+                      0
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                  <div class="row">
+                    <div class="col">
+                      Facebook
+                    </div>
+                    <div class="col">
+                      0
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                  <div class="row">
+                    <div class="col">
+                      Twitter
+                    </div>
+                    <div class="col">
+                      0
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                  <div class="row">
+                    <div class="col">
+                      Radio
+                    </div>
+                    <div class="col">
+                      0
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    </div>
+                </li>
+                <li class="list-group-item ">
+                  <div class="row">
+                    <div class="col">
+                      NewsPaper
+                    </div>
+                    <div class="col">
+                      0
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    <div class="col">
+                      102388
+                    </div>
+                    </div>
+                </li>
+              </ul>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item ">
+
+                  <div class="row justify-content-md-center">
+                    <div class=" col-md-auto form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckDefault">enable % change</label>
+                      </div>
+                    <div class="col-md-auto">
+                      <button type="button" class="btn btn-sm btn-outline-secondary px-2" >
+                        <span data-feather="cpu"></span>
+                        Optimize
+                      </button>
+                    </div>
+                    <div class="col-md-auto">
+                      <button type="button" class="btn btn-sm btn-outline-secondary px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <span data-feather="maximize-2"></span>
+                        Expand
+                      </button>
+                    </div>
+
+
+                    
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+          </div>
         </div>
-        <div >
+
+
+         <h5 class='border-bottom mt-3 mb-3'>Spends vs Applications</h5>
+        <div>
           <div class="row">
             <div class="col">
               <div class="my-2 w-100" id="myDiv" width="900" height="380"></div>
 
             </div>
-            <div class="col mt-3" >
-              <div class="card constraint"  width="900" height="380">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item active">
-                    <div class="row">
-                      <div class="col">
-                        Channels
-                      </div>
-                      <div class="col">
-                        Change( % )
-                      </div>
-                      <div class="col">
-                        New Spend Value($)
-                      </div>
-                      <div class="col">
-                        Current Spend Value($)
-                      </div>
-
-                      </div>
-                  </li>
-                  </ul>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item ">
-                    <div class="row">
-                      <div class="col">
-                        Overall
-                      </div>
-                      <div class="col">
-                        0
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      </div>
-                  </li>
-                  <li class="list-group-item ">
-                    <div class="row">
-                      <div class="col">
-                        Google Adwords
-                      </div>
-                      <div class="col">
-                        0
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      </div>
-                  </li>
-                  <li class="list-group-item ">
-                    <div class="row">
-                      <div class="col">
-                        Facebook
-                      </div>
-                      <div class="col">
-                        0
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      </div>
-                  </li>
-                  <li class="list-group-item ">
-                    <div class="row">
-                      <div class="col">
-                        Twitter
-                      </div>
-                      <div class="col">
-                        0
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      </div>
-                  </li>
-                  <li class="list-group-item ">
-                    <div class="row">
-                      <div class="col">
-                        Radio
-                      </div>
-                      <div class="col">
-                        0
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      </div>
-                  </li>
-                  <li class="list-group-item ">
-                    <div class="row">
-                      <div class="col">
-                        NewsPaper
-                      </div>
-                      <div class="col">
-                        0
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      <div class="col">
-                        102388
-                      </div>
-                      </div>
-                  </li>
-                </ul>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item ">
-
-                    <div class="row justify-content-md-center">
-                      <div class=" col-md-auto form-check form-switch">
-                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                          <label class="form-check-label" for="flexSwitchCheckDefault">enable % change</label>
-                        </div>
-                      <div class="col-md-auto">
-                        <button type="button" class="btn btn-sm btn-outline-secondary px-2" >
-                          <span data-feather="cpu"></span>
-                          Optimize
-                        </button>
-                      </div>
-                      <div class="col-md-auto">
-                        <button type="button" class="btn btn-sm btn-outline-secondary px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                          <span data-feather="maximize-2"></span>
-                          Expand
-                        </button>
-                      </div>
-
-
-                      
-                      </div>
-                  </li>
-                  </ul>
-              </div>
+            <div class="col">
+              <div class="my-2 w-100" id="myDiv2" width="900" height="380"></div>
 
             </div>
           </div>
@@ -470,7 +496,7 @@
         </div>
       <!-- <canvas class="my-4 w-50" id="myChart2" width="900" height="380"></canvas> -->
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-      <h4>Optimization Table</h4>
+      <h5>Optimization Table <p class="text-muted">(overall)</p></h5>
       <div class=" mb-2 mb-md-0">
         <!-- <div class="btn-group me-2">
           <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
@@ -493,8 +519,9 @@
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
-            <tr>
-              <th>Media</th>
+            <tr class='active'>
+
+                  <th>Media</th>
               <th>Spend(in $)</th>
               <th>Optimized Spend(in $)</th>
               <th>Applications</th>
@@ -502,6 +529,8 @@
               <th>Long Run Applications</th>
               <th>CPA(in $)</th>
               <th>New CPA(in $)</th>
+               
+             
             </tr>
           </thead>
           <tbody>

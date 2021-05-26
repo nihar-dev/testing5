@@ -145,7 +145,7 @@ body {
 /*----  Main Style  ----*/
 #cards_landscape_wrap-2{
   text-align: center;
-  background: #F7F7F7;
+  background: #fff;
 }
 
 #cards_landscape_wrap-2 a{
@@ -162,13 +162,14 @@ body {
   border-radius: 5px;
 }
 
-#cards_landscape_wrap-2 .card-flyer .text-box{
+/* #cards_landscape_wrap-2 .card-flyer .text-box{
   text-align: center;
-}
+} */
 #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
-  padding: 30px 18px;
+  padding-top:  10px;
+  padding-bottom: 5px;
 }
-#cards_landscape_wrap-2 .card-flyer{
+/* #cards_landscape_wrap-2 .card-flyer{
   background: #FFFFFF;
   margin-top: 50px;
   -webkit-transition: all 0.2s ease-in;
@@ -204,8 +205,19 @@ body {
   font-family: 'Roboto Black', sans-serif;
   letter-spacing: 1px;
   color: #007bff;
-}
+} */
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  font-weight: bold;
 
+  color: #03a519;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  /* font-weight: bold; */
+  /* font-family: 'Roboto Black', sans-serif; */
+  color: #000000;
+} 
 
 /*----  card Style  end ----*/
 .btn-toolbar .h6{
@@ -228,4 +240,24 @@ body {
 
 .footer_nav {
   text-align: center;
+}
+
+.list-group-flush > li.active {
+  background-color : #ced4da !important;
+  color: #000000;
+}
+
+.table-sm thead tr { 
+  background-color : #ced4da !important;
+  color: #000000;
+  border-width: 0px 0px 1px;
+  padding: 0.5rem 1rem;
+
+}
+
+
+.btn-outline-secondary.disabled,
+.btn-outline-secondary:disabled {
+    color: #000 !important;
+    background-color: transparent !important;
 }
