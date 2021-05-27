@@ -266,3 +266,7 @@ body {
   text-decoration: none;
   outline: none;
 }
+
+.btn-right {
+  float: right!important
+}

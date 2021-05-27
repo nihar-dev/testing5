@@ -217,22 +217,7 @@
                           <input type="text" aria-label="Small" aria-describedby="inputGroup-sizing-sm" class="form-control" placeholder="Start Month" >
                   </div>
               </div>
-              <div class="input-daterange input-group" id="parent_control">
-                <div class="input-group-prepend">
-                  <span class=" btn basic-addon btn-outline-secondary m-1 disabled" aria-disabled="true"  id="basic-addon35" > View  </span>
-                </div>
-                <div class="dropdown m-1">
-                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Overall
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Overall</a></li>
-                    <li><a class="dropdown-item" href="#">Jan</a></li>
-                    <li><a class="dropdown-item" href="#">Feb</a></li>
-                    <li><a class="dropdown-item" href="#">Mar</a></li>
-                  </ul>
-                </div>
-            </div>
+             
             </div>
           </form>
             
@@ -330,17 +315,8 @@
         <h5 class='border-bottom mt-3'>Constraints</h5>
         <div class="d-flex flex-row-reverse justify-content-between flex-wrap flex-md-nowrap align-items-center  pb-2 mb-3   m-6">
           
-          <!-- <div class="btn-toolbar mb-2 mb-md-0 selectortop">
-            <h6 >View:  </h6>
 
-            <div class="btn-group me-2 align-items-center ">
 
-              <button type="button" class="btn btn-sm btn-outline-secondary">Yearly</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Half Yearly</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Quaterly</button>
-            </div>
-
-          </div> -->
           <div class="col " >
             <div class="card constraint"  width="900" height="380">
               <ul class="list-group list-group-flush">
@@ -493,16 +469,34 @@
 
 
          <h5 class='border-bottom mt-3 mb-3'>Spends vs Applications</h5>
+        <div class="row justify-content-end btn-right">
+         <div class=" input-daterange input-group" id="parent_control" >
+          <div class="input-group-append">
+            <span class=" btn basic-addon btn-sm btn-outline-secondary m-1 disabled" aria-disabled="true"  id="basic-addon35" > View  </span>
+          </div>
+          <div class="dropdown m-1">
+            <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Overall
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Overall</a></li>
+              <li><a class="dropdown-item" href="#">Jan</a></li>
+              <li><a class="dropdown-item" href="#">Feb</a></li>
+              <li><a class="dropdown-item" href="#">Mar</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
         <div>
           <div class="row">
             <div class="col">
               <div class="my-2 w-100" id="myDiv" width="900" height="380"></div>
 
             </div>
-            <div class="col">
+            <!-- <div class="col">
               <div class="my-2 w-100" id="myDiv2" width="900" height="380"></div>
 
-            </div>
+            </div> -->
           </div>
 
         </div>
