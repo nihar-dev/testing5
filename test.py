@@ -27,3 +27,28 @@ print(
         source_file_name, destination_blob_name
     )
 )
+
+
+def getDictFromFeedback(excel_file_path):
+    Projects_clean2 = pd.read_excel(excel_file_path, sheet_name='Feedback - Assignment Manager')
+    #removing 1st column as 1st column is NA
+    Projects_clean2.drop(Projects_clean2.columns[0], axis=1, inplace=True)
+    #transponsing row to column and column to rows
+    df_tr = Projects_clean2.transpose()
+    #converting 1st row to column headers
+    header_row = df_tr.iloc[0]
+    df2 = pd.DataFrame(df_tr.values[1:], columns=header_row)
+    #removing last 2 lines
+    df2.drop(df2.tail(2).index,inplace=True)
+    #converting df to dict
+    dictOfSingleFeedbacks =  df2.to_dict('records')
+    #adding 2nd row of briefs and positives to 1st row
+    dictOfSingleFeedbacks[0]['brief'] = dictOfSingleFeedbacks[1]['Line Manager']
+    dictOfSingleFeedbacks[0]['positives/ebis'] = dictOfSingleFeedbacks[1]['Quality of Deliverables']
+    my_dict = dictOfSingleFeedbacks[0]
+    clean_dict = {k: my_dict[k] for k in my_dict if not pd.isna(my_dict[k])}
+    final_dict = dict(set(my_dict.items()) - set(clean_dict.items()))
+    final_dict = {"negative":final_dict,"positive":clean_dict,"total":dictOfSingleFeedbacks}
+    return final_dict
+   
+   
